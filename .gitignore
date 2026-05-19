@@ -1,0 +1,54 @@
+# ─── Python ─────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# ─── Virtual Environments ────────────────────────────────────────────────────
+venv/
+env/
+.env/
+.venv/
+ENV/
+
+# ─── Jupyter Notebook ────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ─── IDE & Editor ────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# ─── Internal Tool Folders ───────────────────────────────────────────────────
+.sixth/
+
+# ─── Build & Distribution ────────────────────────────────────────────────────
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# ─── Test & Coverage ─────────────────────────────────────────────────────────
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ─── Logs & Temp ─────────────────────────────────────────────────────────────
+*.log
+*.tmp
+*.temp
+
+# ─── Node (build script deps) ────────────────────────────────────────────────
+node_modules/

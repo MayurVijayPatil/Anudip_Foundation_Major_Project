@@ -1,0 +1,53 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{box-sizing:border-box} body{margin:0;background:#dfe7ef;font-family:"Segoe UI",Arial,sans-serif;color:#16202a}
+.page{width:1600px;height:1050px;background:#eef3f8;padding:26px 30px 32px;position:relative;overflow:hidden}
+.top{height:86px;background:linear-gradient(90deg,#132c46,#1d6fa8);border-radius:14px;padding:18px 28px;color:#fff;display:flex;align-items:center;justify-content:space-between;box-shadow:0 14px 28px #15324d22}
+.brand h1{font-size:31px;margin:0 0 5px;font-weight:720;letter-spacing:0}.brand p{font-size:15px;margin:0;color:#cde7f6}
+.badge{background:#ffffff20;border:1px solid #ffffff30;border-radius:999px;padding:11px 16px;font-weight:650}
+.grid{display:grid;gap:18px;margin-top:18px}.kpis{grid-template-columns:repeat(6,1fr)}
+.kpi,.panel{background:#fff;border:1px solid #dce7f0;border-radius:14px;box-shadow:0 12px 24px #16344d16}.kpi{height:118px;padding:18px 18px 14px}
+.kpi-title{color:#6d7f8e;font-size:14px;font-weight:700;text-transform:uppercase}.kpi-value{font-size:34px;font-weight:760;margin-top:10px;color:#17212c}.kpi-sub{font-size:13px;color:#8090a0;margin-top:5px}
+.layout-2{grid-template-columns:1.45fr 1fr}.layout-3{grid-template-columns:1fr 1fr 1fr}.panel{padding:20px;min-height:250px}
+.panel h2{font-size:20px;margin:0 0 14px;color:#16324b}.panel .note{font-size:13px;color:#708091;margin-top:-8px;margin-bottom:10px}
+.chart-svg{width:100%;height:100%}.axis{stroke:#c8d6e1;stroke-width:1}.line-main{fill:none;stroke:#2f7dd3;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.chart-svg circle{fill:#fff;stroke:#2f7dd3;stroke-width:3}
+.bar-label{font-size:16px;fill:#34495e;font-weight:650}.bar-value{font-size:14px;fill:#718192}.donut{width:220px;height:220px}
+.legend{display:grid;gap:10px;align-content:center}.legend-row{display:flex;align-items:center;justify-content:space-between;font-size:16px}.dot{width:12px;height:12px;border-radius:50%;display:inline-block;margin-right:8px}
+table{width:100%;border-collapse:collapse;font-size:15px}th{text-align:left;color:#657789;font-size:13px;text-transform:uppercase;border-bottom:1px solid #dce7f0;padding:10px 8px}td{padding:10px 8px;border-bottom:1px solid #edf2f6}td:last-child,th:last-child{text-align:right}
+.insight{display:grid;gap:12px}.insight div{background:#f4f8fb;border-left:5px solid #2f7dd3;border-radius:8px;padding:13px 14px;font-size:16px;line-height:1.38}
+.split{display:grid;grid-template-columns:280px 1fr;gap:16px;align-items:center}.footer{position:absolute;bottom:10px;right:30px;color:#7b8b9b;font-size:12px}
+</style></head><body><main class="page">
+    <section class="top"><div class="brand"><h1>Sales Forecasting & Business Performance Dashboard</h1><p>Executive view of revenue, profit, orders, regions, categories, and forecast readiness</p></div><div class="badge">Superstore Sales | 2014-2017</div></section>
+    <section class="grid kpis">
+    <div class="kpi"><div class="kpi-title">Total Revenue</div><div class="kpi-value">$2,297,201</div><div class="kpi-sub">All sales</div></div>
+    <div class="kpi"><div class="kpi-title">Total Profit</div><div class="kpi-value">$286,397</div><div class="kpi-sub">Net profit</div></div>
+    <div class="kpi"><div class="kpi-title">Profit Margin</div><div class="kpi-value">12.5%</div><div class="kpi-sub">Profit / revenue</div></div>
+    <div class="kpi"><div class="kpi-title">Orders</div><div class="kpi-value">5,009</div><div class="kpi-sub">Distinct orders</div></div>
+    <div class="kpi"><div class="kpi-title">Units Sold</div><div class="kpi-value">37,873</div><div class="kpi-sub">Quantity</div></div>
+    <div class="kpi"><div class="kpi-title">Avg Discount</div><div class="kpi-value">15.6%</div><div class="kpi-sub">Across rows</div></div>
+  </section>
+  <section class="grid layout-2">
+    <div class="panel"><h2>Monthly Sales Trend</h2><div style="height:290px"><svg viewBox="0 0 920 290" class="chart-svg">
+    <line x1="28" y1="262" x2="892" y2="262" class="axis"/>
+    <line x1="28" y1="28" x2="28" y2="262" class="axis"/>
+    <path d="M 28.0 242.4 L 46.4 261.3 L 64.8 161.7 L 83.1 215.0 L 101.5 224.1 L 119.9 202.8 L 138.3 204.0 L 156.7 215.8 L 175.1 110.9 L 193.4 208.9 L 211.8 117.0 L 230.2 134.7 L 248.6 234.7 L 267.0 246.8 L 285.4 194.7 L 303.7 203.5 L 322.1 211.4 L 340.5 221.8 L 358.9 214.1 L 377.3 198.3 L 395.7 144.4 L 414.0 209.0 L 432.4 122.2 L 450.8 124.3 L 469.2 234.0 L 487.6 225.4 L 506.0 169.4 L 524.3 194.7 L 542.7 159.2 L 561.1 191.6 L 579.5 193.7 L 597.9 209.5 L 616.3 127.2 L 634.6 153.9 L 653.0 115.5 L 671.4 81.3 L 689.8 184.5 L 708.2 230.6 L 726.6 155.5 L 744.9 199.0 L 763.3 183.9 L 781.7 167.0 L 800.1 182.0 L 818.5 147.2 L 836.9 99.1 L 855.2 118.7 L 873.6 39.5 L 892.0 106.9" class="line-main"/>
+    <circle cx="28.0" cy="242.4" r="3.5" /><circle cx="119.9" cy="202.8" r="3.5" /><circle cx="211.8" cy="117.0" r="3.5" /><circle cx="303.7" cy="203.5" r="3.5" /><circle cx="395.7" cy="144.4" r="3.5" /><circle cx="487.6" cy="225.4" r="3.5" /><circle cx="579.5" cy="193.7" r="3.5" /><circle cx="671.4" cy="81.3" r="3.5" /><circle cx="763.3" cy="183.9" r="3.5" /><circle cx="855.2" cy="118.7" r="3.5" /><circle cx="892.0" cy="106.9" r="3.5" />
+  </svg></div></div>
+    <div class="panel"><h2>Region Performance</h2><div style="height:290px"><svg viewBox="0 0 570 290" class="chart-svg bars">
+    <text x="4" y="53.6" class="bar-label">West</text>
+          <rect x="125" y="14" width="390.0" height="36.3" rx="5" fill="#2f7dd3"/>
+          <text x="522" y="50.300000000000004" class="bar-value">$725,458</text><text x="4" y="119.6" class="bar-label">East</text>
+          <rect x="125" y="80" width="364.9" height="36.3" rx="5" fill="#2f7dd3"/>
+          <text x="496.90706235397283" y="116.30000000000001" class="bar-value">$678,781</text><text x="4" y="185.6" class="bar-label">Central</text>
+          <rect x="125" y="146" width="269.5" height="36.3" rx="5" fill="#2f7dd3"/>
+          <text x="401.4623323509278" y="182.3" class="bar-value">$501,240</text><text x="4" y="251.6" class="bar-label">South</text>
+          <rect x="125" y="212" width="210.6" height="36.3" rx="5" fill="#2f7dd3"/>
+          <text x="342.58638805818" y="248.3" class="bar-value">$391,722</text>
+  </svg></div></div>
+  </section>
+  <section class="grid layout-2">
+    <div class="panel"><h2>Sales by Category</h2><div class="split"><svg viewBox="0 0 240 240" class="donut"><path d="M 120.00 16.00 A 104 104 0 0 1 198.45 188.28" stroke="#2f7dd3" stroke-width="26" fill="none" stroke-linecap="round"/><path d="M 198.45 188.28 A 104 104 0 0 1 24.04 160.11" stroke="#15a085" stroke-width="26" fill="none" stroke-linecap="round"/><path d="M 24.04 160.11 A 104 104 0 0 1 120.00 16.00" stroke="#f39c12" stroke-width="26" fill="none" stroke-linecap="round"/><circle cx="120" cy="120" r="83" fill="#fff"/></svg>
+      <div class="legend"><div class="legend-row"><span><span class="dot" style="background:#2f7dd3"></span>Technology</span><strong>$836,154</strong></div><div class="legend-row"><span><span class="dot" style="background:#15a085"></span>Furniture</span><strong>$742,000</strong></div><div class="legend-row"><span><span class="dot" style="background:#f39c12"></span>Office Supplies</span><strong>$719,047</strong></div></div></div></div>
+    <div class="panel"><h2>Business Insights</h2><div class="insight"><div>West is the top region with $725,458 in sales.</div><div>Technology leads categories with $836,154 revenue.</div><div>Overall profit margin is 12.5%, driven by $286,397 profit.</div><div>Next 6-month forecast totals $351,751 with March 2018 as the strongest forecast month.</div></div></div>
+  </section>
+    <div class="footer">Generated from data/superstore_cleaned.csv and data/sales_forecast_6months.csv</div>
+  </main></body></html>

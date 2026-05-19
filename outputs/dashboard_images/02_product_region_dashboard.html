@@ -1,0 +1,53 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{box-sizing:border-box} body{margin:0;background:#dfe7ef;font-family:"Segoe UI",Arial,sans-serif;color:#16202a}
+.page{width:1600px;height:1050px;background:#eef3f8;padding:26px 30px 32px;position:relative;overflow:hidden}
+.top{height:86px;background:linear-gradient(90deg,#132c46,#1d6fa8);border-radius:14px;padding:18px 28px;color:#fff;display:flex;align-items:center;justify-content:space-between;box-shadow:0 14px 28px #15324d22}
+.brand h1{font-size:31px;margin:0 0 5px;font-weight:720;letter-spacing:0}.brand p{font-size:15px;margin:0;color:#cde7f6}
+.badge{background:#ffffff20;border:1px solid #ffffff30;border-radius:999px;padding:11px 16px;font-weight:650}
+.grid{display:grid;gap:18px;margin-top:18px}.kpis{grid-template-columns:repeat(6,1fr)}
+.kpi,.panel{background:#fff;border:1px solid #dce7f0;border-radius:14px;box-shadow:0 12px 24px #16344d16}.kpi{height:118px;padding:18px 18px 14px}
+.kpi-title{color:#6d7f8e;font-size:14px;font-weight:700;text-transform:uppercase}.kpi-value{font-size:34px;font-weight:760;margin-top:10px;color:#17212c}.kpi-sub{font-size:13px;color:#8090a0;margin-top:5px}
+.layout-2{grid-template-columns:1.45fr 1fr}.layout-3{grid-template-columns:1fr 1fr 1fr}.panel{padding:20px;min-height:250px}
+.panel h2{font-size:20px;margin:0 0 14px;color:#16324b}.panel .note{font-size:13px;color:#708091;margin-top:-8px;margin-bottom:10px}
+.chart-svg{width:100%;height:100%}.axis{stroke:#c8d6e1;stroke-width:1}.line-main{fill:none;stroke:#2f7dd3;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.chart-svg circle{fill:#fff;stroke:#2f7dd3;stroke-width:3}
+.bar-label{font-size:16px;fill:#34495e;font-weight:650}.bar-value{font-size:14px;fill:#718192}.donut{width:220px;height:220px}
+.legend{display:grid;gap:10px;align-content:center}.legend-row{display:flex;align-items:center;justify-content:space-between;font-size:16px}.dot{width:12px;height:12px;border-radius:50%;display:inline-block;margin-right:8px}
+table{width:100%;border-collapse:collapse;font-size:15px}th{text-align:left;color:#657789;font-size:13px;text-transform:uppercase;border-bottom:1px solid #dce7f0;padding:10px 8px}td{padding:10px 8px;border-bottom:1px solid #edf2f6}td:last-child,th:last-child{text-align:right}
+.insight{display:grid;gap:12px}.insight div{background:#f4f8fb;border-left:5px solid #2f7dd3;border-radius:8px;padding:13px 14px;font-size:16px;line-height:1.38}
+.split{display:grid;grid-template-columns:280px 1fr;gap:16px;align-items:center}.footer{position:absolute;bottom:10px;right:30px;color:#7b8b9b;font-size:12px}
+</style></head><body><main class="page">
+    <section class="top"><div class="brand"><h1>Product, Region & Segment Performance</h1><p>Operational view for identifying where sales and profit are concentrated</p></div><div class="badge">Superstore Sales | 2014-2017</div></section>
+    <section class="grid layout-2">
+    <div class="panel"><h2>Top Products by Sales</h2><table><thead><tr><th>Product</th><th>Sales</th><th>Profit</th></tr></thead><tbody><tr><td>Canon imageCLASS 2200 Advanced Copier</td><td>$61,600</td><td>$25,200</td></tr><tr><td>Fellowes PB500 Electric Punch Plastic Comb Binding Machine with Manual Bind</td><td>$27,453</td><td>$7,753</td></tr><tr><td>Cisco TelePresence System EX90 Videoconferencing Unit</td><td>$22,638</td><td>$-1,811</td></tr><tr><td>HON 5400 Series Task Chairs for Big and Tall</td><td>$21,871</td><td>$0</td></tr><tr><td>GBC DocuBind TL300 Electric Binding System</td><td>$19,823</td><td>$2,234</td></tr><tr><td>GBC Ibimaster 500 Manual ProClick Binding System</td><td>$19,025</td><td>$761</td></tr><tr><td>Hewlett Packard LaserJet 3310 Copier</td><td>$18,840</td><td>$6,984</td></tr><tr><td>HP Designjet T520 Inkjet Large Format Printer - 24&quot; Color</td><td>$18,375</td><td>$4,095</td></tr></tbody></table></div>
+    <div class="panel"><h2>Sub-Category Sales</h2><div style="height:390px"><svg viewBox="0 0 600 390" class="chart-svg bars">
+    <text x="4" y="35.84" class="bar-label">Phones</text>
+          <rect x="125" y="14" width="420.0" height="20.0" rx="5" fill="#15a085"/>
+          <text x="552" y="34.019999999999996" class="bar-value">$330,007</text><text x="4" y="72.24" class="bar-label">Chairs</text>
+          <rect x="125" y="50.4" width="418.0" height="20.0" rx="5" fill="#15a085"/>
+          <text x="550.017195656673" y="70.42" class="bar-value">$328,449</text><text x="4" y="108.64" class="bar-label">Storage</text>
+          <rect x="125" y="86.8" width="284.9" height="20.0" rx="5" fill="#15a085"/>
+          <text x="416.88577507800795" y="106.82" class="bar-value">$223,844</text><text x="4" y="145.04" class="bar-label">Tables</text>
+          <rect x="125" y="123.19999999999999" width="263.4" height="20.0" rx="5" fill="#15a085"/>
+          <text x="395.4050466084886" y="143.22" class="bar-value">$206,966</text><text x="4" y="181.44" class="bar-label">Binders</text>
+          <rect x="125" y="159.6" width="258.9" height="20.0" rx="5" fill="#15a085"/>
+          <text x="390.88339908031185" y="179.62" class="bar-value">$203,413</text><text x="4" y="217.84" class="bar-label">Machines</text>
+          <rect x="125" y="196" width="240.8" height="20.0" rx="5" fill="#15a085"/>
+          <text x="372.8440185039195" y="216.02" class="bar-value">$189,239</text><text x="4" y="254.23999999999998" class="bar-label">Accessories</text>
+          <rect x="125" y="232.39999999999998" width="213.0" height="20.0" rx="5" fill="#15a085"/>
+          <text x="345.02494206684446" y="252.42" class="bar-value">$167,380</text><text x="4" y="290.63999999999993" class="bar-label">Copiers</text>
+          <rect x="125" y="268.79999999999995" width="190.3" height="20.0" rx="5" fill="#15a085"/>
+          <text x="322.3043339188742" y="288.81999999999994" class="bar-value">$149,528</text><text x="4" y="327.03999999999996" class="bar-label">Bookcases</text>
+          <rect x="125" y="305.2" width="146.2" height="20.0" rx="5" fill="#15a085"/>
+          <text x="278.2077790797768" y="325.21999999999997" class="bar-value">$114,880</text><text x="4" y="363.43999999999994" class="bar-label">Appliances</text>
+          <rect x="125" y="341.59999999999997" width="136.9" height="20.0" rx="5" fill="#15a085"/>
+          <text x="268.8561885952898" y="361.61999999999995" class="bar-value">$107,532</text>
+  </svg></div></div>
+  </section>
+  <section class="grid layout-3">
+    <div class="panel"><h2>Segment Mix</h2><div class="split" style="grid-template-columns:220px 1fr"><svg viewBox="0 0 220 220" class="donut"><path d="M 110.00 16.00 A 94 94 0 1 1 106.71 203.94" stroke="#2f7dd3" stroke-width="26" fill="none" stroke-linecap="round"/><path d="M 106.71 203.94 A 94 94 0 0 1 23.26 73.77" stroke="#15a085" stroke-width="26" fill="none" stroke-linecap="round"/><path d="M 23.26 73.77 A 94 94 0 0 1 110.00 16.00" stroke="#f39c12" stroke-width="26" fill="none" stroke-linecap="round"/><circle cx="110" cy="110" r="73" fill="#fff"/></svg>
+      <div class="legend"><div class="legend-row"><span><span class="dot" style="background:#2f7dd3"></span>Consumer</span><strong>$1,161,401</strong></div><div class="legend-row"><span><span class="dot" style="background:#15a085"></span>Corporate</span><strong>$706,146</strong></div><div class="legend-row"><span><span class="dot" style="background:#f39c12"></span>Home Office</span><strong>$429,653</strong></div></div></div></div>
+    <div class="panel"><h2>Category Sales vs Profit</h2><table><thead><tr><th>Category</th><th>Sales</th><th>Profit</th></tr></thead><tbody><tr><td>Technology</td><td>$836,154</td><td>$145,455</td></tr><tr><td>Furniture</td><td>$742,000</td><td>$18,451</td></tr><tr><td>Office Supplies</td><td>$719,047</td><td>$122,491</td></tr></tbody></table></div>
+    <div class="panel"><h2>Region Sales vs Profit</h2><table><thead><tr><th>Region</th><th>Sales</th><th>Profit</th></tr></thead><tbody><tr><td>West</td><td>$725,458</td><td>$108,418</td></tr><tr><td>East</td><td>$678,781</td><td>$91,523</td></tr><tr><td>Central</td><td>$501,240</td><td>$39,706</td></tr><tr><td>South</td><td>$391,722</td><td>$46,749</td></tr></tbody></table></div>
+  </section>
+    <div class="footer">Generated from data/superstore_cleaned.csv and data/sales_forecast_6months.csv</div>
+  </main></body></html>

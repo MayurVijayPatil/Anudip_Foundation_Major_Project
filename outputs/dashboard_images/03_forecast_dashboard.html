@@ -1,0 +1,58 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{box-sizing:border-box} body{margin:0;background:#dfe7ef;font-family:"Segoe UI",Arial,sans-serif;color:#16202a}
+.page{width:1600px;height:1050px;background:#eef3f8;padding:26px 30px 32px;position:relative;overflow:hidden}
+.top{height:86px;background:linear-gradient(90deg,#132c46,#1d6fa8);border-radius:14px;padding:18px 28px;color:#fff;display:flex;align-items:center;justify-content:space-between;box-shadow:0 14px 28px #15324d22}
+.brand h1{font-size:31px;margin:0 0 5px;font-weight:720;letter-spacing:0}.brand p{font-size:15px;margin:0;color:#cde7f6}
+.badge{background:#ffffff20;border:1px solid #ffffff30;border-radius:999px;padding:11px 16px;font-weight:650}
+.grid{display:grid;gap:18px;margin-top:18px}.kpis{grid-template-columns:repeat(6,1fr)}
+.kpi,.panel{background:#fff;border:1px solid #dce7f0;border-radius:14px;box-shadow:0 12px 24px #16344d16}.kpi{height:118px;padding:18px 18px 14px}
+.kpi-title{color:#6d7f8e;font-size:14px;font-weight:700;text-transform:uppercase}.kpi-value{font-size:34px;font-weight:760;margin-top:10px;color:#17212c}.kpi-sub{font-size:13px;color:#8090a0;margin-top:5px}
+.layout-2{grid-template-columns:1.45fr 1fr}.layout-3{grid-template-columns:1fr 1fr 1fr}.panel{padding:20px;min-height:250px}
+.panel h2{font-size:20px;margin:0 0 14px;color:#16324b}.panel .note{font-size:13px;color:#708091;margin-top:-8px;margin-bottom:10px}
+.chart-svg{width:100%;height:100%}.axis{stroke:#c8d6e1;stroke-width:1}.line-main{fill:none;stroke:#2f7dd3;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.chart-svg circle{fill:#fff;stroke:#2f7dd3;stroke-width:3}
+.bar-label{font-size:16px;fill:#34495e;font-weight:650}.bar-value{font-size:14px;fill:#718192}.donut{width:220px;height:220px}
+.legend{display:grid;gap:10px;align-content:center}.legend-row{display:flex;align-items:center;justify-content:space-between;font-size:16px}.dot{width:12px;height:12px;border-radius:50%;display:inline-block;margin-right:8px}
+table{width:100%;border-collapse:collapse;font-size:15px}th{text-align:left;color:#657789;font-size:13px;text-transform:uppercase;border-bottom:1px solid #dce7f0;padding:10px 8px}td{padding:10px 8px;border-bottom:1px solid #edf2f6}td:last-child,th:last-child{text-align:right}
+.insight{display:grid;gap:12px}.insight div{background:#f4f8fb;border-left:5px solid #2f7dd3;border-radius:8px;padding:13px 14px;font-size:16px;line-height:1.38}
+.split{display:grid;grid-template-columns:280px 1fr;gap:16px;align-items:center}.footer{position:absolute;bottom:10px;right:30px;color:#7b8b9b;font-size:12px}
+</style></head><body><main class="page">
+    <section class="top"><div class="brand"><h1>Six-Month Sales Forecast</h1><p>Forecast for January 2018 through June 2018 with 95% confidence ranges</p></div><div class="badge">Superstore Sales | 2014-2017</div></section>
+    <section class="grid kpis" style="grid-template-columns:repeat(4,1fr)">
+    <div class="kpi"><div class="kpi-title">Forecast Total</div><div class="kpi-value">$351,751</div><div class="kpi-sub">Jan-Jun 2018</div></div>
+    <div class="kpi"><div class="kpi-title">Jan Forecast</div><div class="kpi-value">$46,537</div><div class="kpi-sub">First forecast month</div></div>
+    <div class="kpi"><div class="kpi-title">Peak Upper 95%</div><div class="kpi-value">$104,092</div><div class="kpi-sub">Highest confidence bound</div></div>
+    <div class="kpi"><div class="kpi-title">Avg Monthly Forecast</div><div class="kpi-value">$58,625</div><div class="kpi-sub">Forecast mean</div></div>
+  </section>
+  <section class="grid layout-2">
+    <div class="panel"><h2>Forecast Sales Trend</h2><div style="height:330px"><svg viewBox="0 0 920 330" class="chart-svg">
+    <line x1="28" y1="302" x2="892" y2="302" class="axis"/>
+    <line x1="28" y1="28" x2="28" y2="302" class="axis"/>
+    <path d="M 28.0 241.6 L 200.8 279.2 L 373.6 53.5 L 546.4 159.7 L 719.2 89.6 L 892.0 122.8" class="line-main"/>
+    <circle cx="28.0" cy="241.6" r="3.5" /><circle cx="200.8" cy="279.2" r="3.5" /><circle cx="373.6" cy="53.5" r="3.5" /><circle cx="546.4" cy="159.7" r="3.5" /><circle cx="719.2" cy="89.6" r="3.5" /><circle cx="892.0" cy="122.8" r="3.5" />
+  </svg></div></div>
+    <div class="panel"><h2>Forecast by Month</h2><div style="height:330px"><svg viewBox="0 0 570 330" class="chart-svg bars">
+    <text x="4" y="44.4" class="bar-label">Jan 18</text>
+          <rect x="125" y="14" width="246.4" height="27.9" rx="5" fill="#f39c12"/>
+          <text x="378.41894575203196" y="41.86666666666667" class="bar-value">$46,537</text><text x="4" y="95.06666666666666" class="bar-label">Feb 18</text>
+          <rect x="125" y="64.66666666666666" width="217.7" height="27.9" rx="5" fill="#f39c12"/>
+          <text x="349.6765772682746" y="92.53333333333333" class="bar-value">$41,109</text><text x="4" y="145.73333333333332" class="bar-label">Mar 18</text>
+          <rect x="125" y="115.33333333333333" width="390.0" height="27.9" rx="5" fill="#f39c12"/>
+          <text x="522" y="143.2" class="bar-value">$73,653</text><text x="4" y="196.4" class="bar-label">Apr 18</text>
+          <rect x="125" y="166" width="308.9" height="27.9" rx="5" fill="#f39c12"/>
+          <text x="440.9377035291626" y="193.86666666666667" class="bar-value">$58,344</text><text x="4" y="247.06666666666666" class="bar-label">May 18</text>
+          <rect x="125" y="216.66666666666666" width="362.4" height="27.9" rx="5" fill="#f39c12"/>
+          <text x="494.4388552063753" y="244.53333333333333" class="bar-value">$68,448</text><text x="4" y="297.7333333333333" class="bar-label">Jun 18</text>
+          <rect x="125" y="267.3333333333333" width="337.1" height="27.9" rx="5" fill="#f39c12"/>
+          <text x="469.07447512641977" y="295.2" class="bar-value">$63,658</text>
+  </svg></div></div>
+  </section>
+  <section class="grid layout-2">
+    <div class="panel"><h2>Forecast Table</h2><table><thead><tr><th>Month</th><th>Forecast</th><th>Lower 95</th><th>Upper 95</th></tr></thead><tbody><tr><td>Jan 18</td><td>$46,537.5</td><td>$17,287.2</td><td>$75,787.7</td></tr><tr><td>Feb 18</td><td>$41,109.3</td><td>$10,940.9</td><td>$71,277.8</td></tr><tr><td>Mar 18</td><td>$73,653.5</td><td>$43,214.6</td><td>$104,092.3</td></tr><tr><td>Apr 18</td><td>$58,344.4</td><td>$27,700.7</td><td>$88,988.2</td></tr><tr><td>May 18</td><td>$68,448.4</td><td>$37,609.9</td><td>$99,286.9</td></tr><tr><td>Jun 18</td><td>$63,658.2</td><td>$32,627.4</td><td>$94,689</td></tr></tbody></table></div>
+    <div class="panel"><h2>Forecast Reading</h2><div class="insight">
+      <div>The forecast remains positive for all six months, with no invalid confidence intervals.</div>
+      <div>March 2018 has the highest expected sales at $73,653.</div>
+      <div>The widest confidence band is normal for future-period uncertainty and should be explained in presentation.</div>
+    </div></div>
+  </section>
+    <div class="footer">Generated from data/superstore_cleaned.csv and data/sales_forecast_6months.csv</div>
+  </main></body></html>

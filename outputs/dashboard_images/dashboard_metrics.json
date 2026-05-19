@@ -1,0 +1,119 @@
+{
+  "totalSales": 2297200.860299955,
+  "totalProfit": 286397.0217000013,
+  "profitMargin": 0.12467217240315906,
+  "totalOrders": 5009,
+  "totalQty": 37873,
+  "avgDiscount": 0.15620272163298934,
+  "region": [
+    {
+      "name": "West",
+      "count": 3203,
+      "sales": 725457.8245000006,
+      "profit": 108418.44890000018
+    },
+    {
+      "name": "East",
+      "count": 2848,
+      "sales": 678781.2399999979,
+      "profit": 91522.78000000026
+    },
+    {
+      "name": "Central",
+      "count": 2323,
+      "sales": 501239.8908000005,
+      "profit": 39706.36249999998
+    },
+    {
+      "name": "South",
+      "count": 1620,
+      "sales": 391721.9050000003,
+      "profit": 46749.430300000065
+    }
+  ],
+  "category": [
+    {
+      "name": "Technology",
+      "count": 1847,
+      "sales": 836154.0329999966,
+      "profit": 145454.9480999999
+    },
+    {
+      "name": "Furniture",
+      "count": 2121,
+      "sales": 741999.7952999998,
+      "profit": 18451.2728
+    },
+    {
+      "name": "Office Supplies",
+      "count": 6026,
+      "sales": 719047.0320000029,
+      "profit": 122490.80080000011
+    }
+  ],
+  "segment": [
+    {
+      "name": "Consumer",
+      "count": 5191,
+      "sales": 1161401.3449999888,
+      "profit": 134119.20919999972
+    },
+    {
+      "name": "Corporate",
+      "count": 3020,
+      "sales": 706146.3668000001,
+      "profit": 91979.13400000021
+    },
+    {
+      "name": "Home Office",
+      "count": 1783,
+      "sales": 429653.1485000003,
+      "profit": 60298.678500000075
+    }
+  ],
+  "forecastRows": [
+    {
+      "month": "2018-01-01",
+      "label": "Jan 18",
+      "forecast": 46537.45,
+      "lower": 17287.23,
+      "upper": 75787.66
+    },
+    {
+      "month": "2018-02-01",
+      "label": "Feb 18",
+      "forecast": 41109.31,
+      "lower": 10940.85,
+      "upper": 71277.76
+    },
+    {
+      "month": "2018-03-01",
+      "label": "Mar 18",
+      "forecast": 73653.45,
+      "lower": 43214.63,
+      "upper": 104092.28
+    },
+    {
+      "month": "2018-04-01",
+      "label": "Apr 18",
+      "forecast": 58344.43,
+      "lower": 27700.67,
+      "upper": 88988.19
+    },
+    {
+      "month": "2018-05-01",
+      "label": "May 18",
+      "forecast": 68448.39,
+      "lower": 37609.87,
+      "upper": 99286.92
+    },
+    {
+      "month": "2018-06-01",
+      "label": "Jun 18",
+      "forecast": 63658.2,
+      "lower": 32627.42,
+      "upper": 94688.97
+    }
+  ],
+  "forecastTotal": 351751.23
+}
